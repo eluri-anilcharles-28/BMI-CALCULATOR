@@ -49,7 +49,7 @@ int main()
      printf("Recommended diet: Balanced Macros (2400 kcal/day\n)");
     }
     
-    else  if (bmi < 30 || goal == 'L' || goal == 'l')
+    else  if (bmi ≥ 30 || goal == 'L' || goal == 'l')
     {
       printf("Overweight\n");
       printf("Recommended diet: high protein , low calorie surplus (1800 kcal/day\n)");
@@ -60,17 +60,17 @@ int main()
      printf("invalid goal entered.\n");
     }
     
-    fp = fopen("diet_data.txt","a");
+    fp = fopen("diet_data.txt", "a");
     if (fp == NULL)
     {
-        printf("Error opening file!\n");
+        printf("Error opening file!
+");
         return 1;
     }
-    
-    fprintf(fp,"Age: %d,Weight: %.2f,Height: %.2f,BMI: %.2f,GOAL: %c\n",age,weight,height,bmi,goal );
+
+    fprintf(fp, "Age: %d, Weight: %.2f. kg,Height: %.2f m, BMI: %.2f, Goal: %c",age, weight, height, bmi, goal);
     fclose(fp);
-    printf("\nData saved to diet_data.txt Successfully.\n");
-    
-    
+    printf("Data saved to diet_data.txt     successfully.");
+
     return 0;
 }
