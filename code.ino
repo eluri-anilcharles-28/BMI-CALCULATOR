@@ -67,9 +67,9 @@ int main()
         return 1;
     }
 
-    fprintf(fp, "Age: %d, Weight: %.2f. kg,Height: %.2f m, BMI: %.2f, Goal: %c",age, weight, height, bmi, goal);
+    fprintf(fp, "Age: %d, Weight: %.2f. kg,Height: %.2f m, BMI: %.2f, Goal: %c",age, weight,height,bmi,goal \n);
     fclose(fp);
-    printf("Data saved to diet_data.txt     successfully.");
+    printf("Data saved to diet_data.txt     successfully.\n");
 
     return 0;
 }
