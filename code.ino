@@ -63,8 +63,7 @@ int main()
     fp = fopen("diet_data.txt", "a");
     if (fp == NULL)
     {
-        printf("Error opening file!
-");
+        printf("Error opening file!\n");
         return 1;
     }
 
